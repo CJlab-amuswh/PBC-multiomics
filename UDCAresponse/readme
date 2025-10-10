@@ -1,1 +1,5 @@
-
+First, feature selection was performed using a filtration method based on differential analyses of proteins and IGPs (fold-change >1.5, P <0.05). 
+The discovery cohort exclusively served as a training set with 10-fold cross-validation, and the validation cohort was used for feature performance confirmation.
+Second, candidate biomarkers were selected, generating 2,000 groups of initial biomarker combinations. 
+Model training, and parameter optimization were determined using a wrapped recursive feature elimination-random forest (RFE-RF) method for further optimizing feature performance. 
+Third, the final biomarker determination was based on the highest ROC-AUC values in the training set,, and independent validation set  (UDCA response predictor.R).
