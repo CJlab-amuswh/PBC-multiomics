@@ -1,4 +1,9 @@
 Diagnosis
+
+To evaluate the diagnostic values of clinical characteristics for CTR, PBC, PBC+AIH, and AIH, we employed a comprehensive approach, together with random forest, to construct the models with 11 clinical variables, 
+including sex, age, BMI, ALB, GLO, DBIL, ALP, GGT, ALT, AST, as well as PBC-specific antibody AMA-M2. 
+The final model was evaluated using the receiver operating characteristic-area under the curve (ROC-AUC) values in the training, test, and validation sets (Clinical_nfeature_RFE_RF_classifier_multi.R).
+
 To perform machine learning using serum proteins and IGPs, we developed a new pipeline named Best-Biomarker Combinations (BBC), adapted from the POC-19 methodology. 
 Before the model construction, the proteomic and glycoproteomic data were scale-normalized. For a four-group classification (CTR, PBC, AIH, PBC+AIH), 
 the top 10 increased and 10 decreased proteins and IGPs with the smallest P values (fold-change >1.5, P <0.05) 
